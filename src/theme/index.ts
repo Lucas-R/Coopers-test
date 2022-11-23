@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { pxToRem } from '../utils/pxToRem';
+import { SpaceProps } from './types';
 
 export const breackPoints = {
   sm: pxToRem(640),
@@ -32,4 +33,9 @@ export const ContainerDefault = styled.div`
   @media (min-width: ${breackPoints.md}) {
     padding: ${pxToRem(30)} ${pxToRem(80)};
   }
+`;
+
+export const Space = styled.div<SpaceProps>`
+  width: ${({horizontal}) => horizontal+'px' ?? '0px'};
+  height: ${({vertical}) => vertical+'px' ?? '0px'};
 `;
