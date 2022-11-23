@@ -5,6 +5,7 @@ import { pxToRem } from '../../utils/pxToRem';
 export const WrapperToDo = styled.div`
   width: 100%;
   height: auto;
+  margin-bottom: ${pxToRem(150)};
 `;
 
 export const WrapperToDoHeader = styled(ContainerDefault)`

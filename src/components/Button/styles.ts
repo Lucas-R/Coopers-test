@@ -9,7 +9,7 @@ export const ButtonDefault = styled.button<ButtonStyleProps>`
   height: ${({height}) => pxToRem(Number(height)) ?? 'auto'};
   background-color: ${({bg}) => bg ?? color.primaryColor};
   padding: ${pxToRem(18)};
-  border-radius: ${pxToRem(10)};
+  border-radius: ${({bRadius}) => pxToRem(bRadius)};
   font-size: ${pxToRem(16)};
   font-weight: 600;
   color: ${color.white}
