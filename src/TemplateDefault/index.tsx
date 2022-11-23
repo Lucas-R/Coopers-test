@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../components/Footer';
 import { Header } from '../sections/Header';
 import { ToDo } from '../sections/ToDo';
 import { GlobalStyle } from './globalStyles';
@@ -10,6 +11,7 @@ const TemplateDefault = () => {
       <GlobalStyle />
       <Header />
       <ToDo />
+      <Footer />
     </Template>
   );
 };
