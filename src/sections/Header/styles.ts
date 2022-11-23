@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CoopersBg from './../../assets/bgs/bg-coopers-header.svg';
+import FillBg from './../../assets/bgs/fill.png';
 import {
   breackPoints,
   color,
@@ -10,16 +11,17 @@ import { pxToRem } from '../../utils/pxToRem';
 export const WrapperHeader = styled.div`
   width: 100%;
   height: auto;
-
-  @media (min-width: ${breackPoints.sm}) {
-
-  }
+  background-image: url(${FillBg});
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+  z-index: -1;
 
   @media (min-width: ${breackPoints.md}) {
     background-image: url(${CoopersBg});
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: auto;
     position: relative;
   }
 `;
@@ -27,14 +29,14 @@ export const WrapperHeader = styled.div`
 export const ContainerHeader = styled(ContainerDefault)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 700px;
 `;
 
 export const WrapperTextsHeader = styled.div`
   width: 100%;
   max-width: ${pxToRem(621)};
+  margin-top: ${pxToRem(100)};
   margin-bottom: ${pxToRem(44)};
 `;
 
