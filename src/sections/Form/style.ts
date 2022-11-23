@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { breackPoints, color, ContainerDefault } from '../../theme';
 import { pxToRem } from '../../utils/pxToRem';
+import { FormStyleProps } from './types';
+import ImageFormPath from './../../assets/images/ImageForm.svg';
 
 export const WrapperForm = styled(ContainerDefault)`
   display: flex;
@@ -14,7 +16,12 @@ export const ContainerForm = styled(ContainerDefault)`
   box-shadow: 0px 8px 16px rgba(6, 21, 43, 0.08);
   border-radius: 4px;
   position: relative;
-  padding-top: ${pxToRem(100)};
+  padding-top: ${pxToRem(130)};
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 &::before{
   content: '';
@@ -25,7 +32,7 @@ export const ContainerForm = styled(ContainerDefault)`
   width: ${pxToRem(166)};
   height: ${pxToRem(24)};
   background-color: ${color.primaryColor};
-  transform: translateX(-85%);
+  transform: translateX(-90%);
 }
 
   @media (min-width: ${breackPoints.sm}) {
@@ -38,6 +45,17 @@ export const HeaderForm = styled.div`
   display: flex;
   gap: ${pxToRem(24)};
   margin-bottom: ${pxToRem(42)};
+`;
+
+export const ImageForm = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: url(${ImageFormPath});
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export const WrapperIcon = styled.div`
@@ -59,16 +77,19 @@ export const TitleForm = styled.h2`
   }
 `;
 
-export const InputGroup = styled.div`
+export const InputGroup = styled.div<FormStyleProps>`
   width: 100%;
   margin-bottom: ${pxToRem(24)};
 
-  input{
-    width: 100%;
-    height: ${pxToRem(50)};
-    border: 1px solid #06152B;
-    border-radius: ${pxToRem(4)};
-    padding: 0 ${pxToRem(15)};
+  @media (min-width: ${breackPoints.sm}) {
+    width: ${({width}) => width+'%'};
+
+    &:nth-child(2){
+      padding-right: 10px;
+    }
+    &:nth-child(3){
+      padding-left: 10px;
+    }
   }
 
   span{
