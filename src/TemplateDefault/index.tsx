@@ -12,8 +12,8 @@ const TemplateDefault = () => {
       <GlobalStyle />
       <Header />
       <ToDo />
-      <Footer />
       <Form />
+      <Footer />
     </Template>
   );
 };
