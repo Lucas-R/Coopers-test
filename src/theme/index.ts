@@ -21,6 +21,18 @@ export const color = {
   gray: '#999999'
 };
 
+export const WrapperDefault = styled.div`
+  margin-bottom: ${pxToRem(50)};
+
+  @media (min-width: ${breackPoints.sm}) {
+    margin-bottom: ${pxToRem(10)};
+  }
+
+  @media (min-width: ${breackPoints.md}) {
+    margin-bottom: ${pxToRem(150)};
+  }
+`;
+
 export const ContainerDefault = styled.div`
   width: 100%;
   height: auto;

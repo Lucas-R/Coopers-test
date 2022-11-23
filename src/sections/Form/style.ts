@@ -1,13 +1,14 @@
 import styled from 'styled-components';
-import { breackPoints, color, ContainerDefault } from '../../theme';
+import { breackPoints, color, ContainerDefault, WrapperDefault } from '../../theme';
 import { pxToRem } from '../../utils/pxToRem';
 import { FormStyleProps } from './types';
 import ImageFormPath from './../../assets/images/ImageForm.svg';
 
-export const WrapperForm = styled(ContainerDefault)`
+export const WrapperForm = styled(WrapperDefault)`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: ${pxToRem(150)};
 `;
 
 export const ContainerForm = styled(ContainerDefault)`

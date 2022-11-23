@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { breackPoints, color, ContainerDefault, font } from '../../theme';
+import { breackPoints, color, ContainerDefault, font, WrapperDefault } from '../../theme';
 import { pxToRem } from '../../utils/pxToRem';
 
-export const WrapperToDo = styled.div`
+export const WrapperToDo = styled(WrapperDefault)`
   width: 100%;
   height: auto;
-  margin-bottom: ${pxToRem(150)};
 `;
 
 export const WrapperToDoHeader = styled(ContainerDefault)`
@@ -18,13 +17,13 @@ export const WrapperToDoHeader = styled(ContainerDefault)`
   align-items: center;
   justify-content: center;
   background-color: ${color.dark};
-  transform: skewY(-5deg);
+  transform: skewY(-2deg);
   margin-bottom: ${pxToRem(50)};
 `;
 
 export const TextsToDoHeader = styled.div`
   width: 100%;
-  transform: skewY(5deg);
+  transform: skewY(2deg);
   display: flex;
   flex-direction: column;
   align-items: center;
