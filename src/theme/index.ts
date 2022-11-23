@@ -8,7 +8,12 @@ export const breackPoints = {
 
 export const font = {
   primaryFont: '\'Montserrat\', sans-serif',
-  secondaryFont: '\'Poppins\', sans-serif;'
+  secondaryFont: '\'Poppins\', sans-serif;',
+
+  color: {
+    dark: '#312F4F',
+    primaryColor: '#4AC959',
+  }
 };
 
 

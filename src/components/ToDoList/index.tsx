@@ -34,7 +34,7 @@ export const ToDoList = ({children, borderColor, data}: ToDoListProps) => {
           list.map(item => {
             return (
               <ListToDoItem  key={item}>
-                <Checkbox type="checkbox"id="checkbox" onClick={() => alert(`checked ${item}`)}/>
+                <Checkbox type="checkbox"id="checkbox"/>
 
                 <WrapperTextToDoItem>
                   <p>{item}</p>

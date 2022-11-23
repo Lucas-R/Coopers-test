@@ -28,8 +28,6 @@ export const DotCheck = styled.div`
   margin-right: ${pxToRem(16)};;
 `;
 
-export const ContentDotCheck = styled.div``;
-
 export const WrapperTextToDoItem = styled.div`
   display: flex;
   flex: 1;
