@@ -10,12 +10,12 @@ import { pxToRem } from '../../utils/pxToRem';
 
 export const WrapperHeader = styled.div`
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: url(${FillBg});
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
+  background-size: ${pxToRem(150)};
   position: relative;
-  z-index: -1;
 
   @media (min-width: ${breackPoints.md}) {
     background-image: url(${CoopersBg});
@@ -29,6 +29,7 @@ export const WrapperHeader = styled.div`
 export const ContainerHeader = styled(ContainerDefault)`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 700px;
 `;
@@ -36,7 +37,6 @@ export const ContainerHeader = styled(ContainerDefault)`
 export const WrapperTextsHeader = styled.div`
   width: 100%;
   max-width: ${pxToRem(621)};
-  margin-top: ${pxToRem(100)};
   margin-bottom: ${pxToRem(44)};
 `;
 
@@ -77,5 +77,21 @@ export const SubTitleHeader = styled.h2`
 
   @media (min-width: ${breackPoints.md}) {
     font-size: ${pxToRem(24)};
+  }
+`;
+
+export const WrapperIcon = styled.button`
+  position: absolute;
+  bottom: ${pxToRem(100)};
+  left: 50%;
+  z-index: 999;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.2);
+  }
+
+  @media (min-width: ${breackPoints.sm}) {
+    bottom: ${pxToRem(10)};
   }
 `;

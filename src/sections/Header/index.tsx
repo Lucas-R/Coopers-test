@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button } from '../../components/Button';
+import { Icon } from '../../components/Icon';
 import { Menu } from '../../components/Menu';
 import {
   WrapperHeader,
   ContainerHeader,
   WrapperTextsHeader,
   TitleHeader,
-  SubTitleHeader
+  SubTitleHeader,
+  WrapperIcon
 } from './styles';
 
 
@@ -32,6 +34,17 @@ export const Header = () => {
           onClick={() => alert('clicked')}
         />
       </ContainerHeader>
+
+      <WrapperIcon
+        onClick={() => alert('clicked')}
+      >
+        <Icon
+          name ="arrow-down"
+          width={30}
+          height={30}
+          alt="ir para to do list"
+        />
+      </WrapperIcon>
     </WrapperHeader>
   );
 };
