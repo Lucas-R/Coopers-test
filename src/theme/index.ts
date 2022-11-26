@@ -18,7 +18,9 @@ export const color = {
   white: '#FFFFFF',
   primaryColor: '#4AC959',
   warning: '#E88D39',
-  gray: '#999999'
+  gray: '#999999',
+  cloudy: '#C4C4C4',
+
 };
 
 export const WrapperDefault = styled.div`
@@ -36,7 +38,7 @@ export const WrapperDefault = styled.div`
 export const ContainerDefault = styled.div`
   width: 100%;
   height: auto;
-  padding: ${pxToRem(8)} ${pxToRem(16)};
+  padding: ${pxToRem(32)} ${pxToRem(16)};
 
   @media (min-width: ${breackPoints.sm}) {
     padding: ${pxToRem(16)} ${pxToRem(40)};
