@@ -6,7 +6,7 @@ import { ToDoListStyleProps } from './types';
 export const WrapperToDoList = styled.div<ToDoListStyleProps>`
   width: 100%;
   max-width: ${pxToRem(380)};
-  min-height: ${pxToRem(100)};
+  height: fit-content;
   border-top: ${pxToRem(20)} solid ${({borderColor}) => borderColor ?? color.dark};
   padding: ${pxToRem(40)} ${pxToRem(30)};
   box-shadow: 0px 4px 12px rgba(66, 66, 66, 0.198454);
