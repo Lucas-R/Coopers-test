@@ -18,6 +18,7 @@ export const ContainerForm = styled(ContainerDefault)`
   border-radius: 4px;
   position: relative;
   padding-top: ${pxToRem(130)};
+  background-color: #FFF;
 
   form{
     display: flex;

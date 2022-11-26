@@ -10,6 +10,7 @@ export const WrapperToDoList = styled.div<ToDoListStyleProps>`
   border-top: ${pxToRem(20)} solid ${({borderColor}) => borderColor ?? color.dark};
   padding: ${pxToRem(40)} ${pxToRem(30)};
   box-shadow: 0px 4px 12px rgba(66, 66, 66, 0.198454);
+  background-color: #FFF;
 `;
 
 export const HeaderToDoList = styled.div`

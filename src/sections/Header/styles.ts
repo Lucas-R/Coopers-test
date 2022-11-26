@@ -11,6 +11,7 @@ import { pxToRem } from '../../utils/pxToRem';
 export const WrapperHeader = styled.div`
   width: 100%;
   height: auto;
+  background-color: #FFF;
   background-image: url(${FillBg});
   background-repeat: no-repeat;
   background-position: right;
